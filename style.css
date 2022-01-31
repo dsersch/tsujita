@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', sarif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+.logo-img {
+    height: 75px;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 18px;
+} 
+
+.hero {
+    height: 95vh;
+    width: 100%;
+    background-image: url('./hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.order {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    letter-spacing: .75px;
+}
+
+.button {
+    background-color: #9D2C22;
+    columns: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px
+}
+
+.contact h3 {
+    font-size: 40px;
+    color: #9D2C22;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-color: #bbb;
+    width: 5%;
+    margin-bottom: 20px;
+}
+
+.contact h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 50px;
+    background-color: black;
+    color: white;
+}
+
+footer .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer a {
+    margin-left: 20px;
+}
+
+.socials i {
+    font-size: 40px;
+    margin: 0 40px;
+    transition: color .3s;
+}
+
+.socials i:hover {
+    color: #9D2C22
+}
