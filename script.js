@@ -1,3 +1,5 @@
+// nav animation
+
 const nav = document.querySelector('nav');
 const hero = document.querySelector('.hero');
 const scrollOptions = {
@@ -16,17 +18,26 @@ const observer = new IntersectionObserver(function(entries, observer) {
 
 observer.observe(hero);
 
+// mobile menu button toggle
 
 const menuButton = document.querySelector('#menu-nav-button')
-
 const navMenu = document.querySelector('.links')
-
 
 menuButton.addEventListener('click', () => {
     navMenu.classList.toggle('show-links')
     console.log('clicked')
 })
 
+// parallax effect for hero
+
+const parallax = document.getElementById('para')
+
+window.addEventListener('scroll', () => {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * .3 + 'px';
+})
+
+// slide in animation for menu items
 
 const boxes = document.querySelectorAll('.left, .right')
 

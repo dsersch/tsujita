@@ -67,10 +67,18 @@ nav.scrolled .links a:hover {
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url('./hero.jpeg');
+    background-image: url('./killer-hero.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    height: 200px;
+    transform: translateY(20vh);
 }
 
 .menu {
@@ -290,6 +298,10 @@ footer a {
 
     .menu {
         text-align: center;
+    }
+
+    .hero img {
+        height: 90px;
     }
 
     hr {
