@@ -17,6 +17,17 @@ const observer = new IntersectionObserver(function(entries, observer) {
 observer.observe(hero);
 
 
+const menuButton = document.querySelector('#menu-nav-button')
+
+const navMenu = document.querySelector('.links')
+
+
+menuButton.addEventListener('click', () => {
+    navMenu.classList.toggle('show-links')
+    console.log('clicked')
+})
+
+
 const boxes = document.querySelectorAll('.left, .right')
 
 window.addEventListener('scroll', checkBoxes)
