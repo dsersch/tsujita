@@ -78,9 +78,15 @@ nav.scrolled .links a:hover {
     padding: 100px;
 }
 
+.menu {
+    text-align: center;
+}
+
 .menu hr {
     margin: 0 auto;
 }
+
+
 
 .menu-img {
     height: 300px;
