@@ -6,7 +6,6 @@ const scrollOptions = {
 
 const observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach((entry) => {
-        console.log(entry.target)
         if (!entry.isIntersecting) {
             nav.classList.add('scrolled')
         } else {
@@ -19,14 +18,13 @@ observer.observe(hero);
 
 
 const boxes = document.querySelectorAll('.left, .right')
-console.log(boxes)
 
 window.addEventListener('scroll', checkBoxes)
 
 checkBoxes()
 
 function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+    const triggerBottom = window.innerHeight * 0.92
 
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top

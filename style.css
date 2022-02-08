@@ -64,7 +64,7 @@ nav.scrolled .links a:hover {
     width: 100%;
     background-image: url('./hero.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: none;
 }
 
@@ -73,10 +73,13 @@ nav.scrolled .links a:hover {
     padding: 100px;
 }
 
+.menu hr {
+    margin: 0 auto;
+}
+
 .menu-img {
     height: 300px;
     width: 400px;
-    background-color: steelblue;
     border-radius: 10px;
     background-size: cover;
     overflow: hidden;
@@ -114,19 +117,23 @@ nav.scrolled .links a:hover {
 .left {
     transform: translateX(-200%);
     transition: all .3s ease-in-out;
+    opacity: 0;
 }
 
 .right {
     transform: translateX(200%);
     transition: all .3s ease-in-out;
+    opacity: 0;
 }
 
 .left.show {
     transform: translateX(15px);
+    opacity: 1;
 }
 
 .right.show {
     transform: translateX(-15px);
+    opacity: 1;
 }
 
 .order {
@@ -153,6 +160,7 @@ nav.scrolled .links a:hover {
     color: white;
     font-size: 18px;
     font-weight: 700;
+    letter-spacing: 2px;
     padding: 20px 50px;
     border-radius: 5px;
     transition: all .3s;
@@ -171,7 +179,7 @@ nav.scrolled .links a:hover {
     padding: 100px
 }
 
-.contact h3 {
+h3 {
     font-size: 40px;
     color: #9D2C22;
     letter-spacing: 3px;
@@ -214,6 +222,10 @@ footer .text {
     margin-bottom: 50px;
 }
 
+footer p {
+    font-size: 20px;
+}
+
 footer a {
     margin-left: 20px;
 }
@@ -226,4 +238,64 @@ footer a {
 
 .socials i:hover {
     color: #9D2C22
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        width: 100vw;
+    }
+    
+    .menu {
+        text-align: center;
+    }
+
+    hr {
+        width: 40%;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu :nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .left.show, .right.show {
+        transform: translateX(0);
+    }
+
+    .description, .menu-img {
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+    #menu-button {
+        padding: 20px 35px;
+    }
+
+    .order {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact h3 {
+        font-size: 30px;
+    }
+
+    .text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text a {
+        margin-top: 30px;
+    }
+
+    .socials i {
+        margin: 0 20px;
+    }
 }
