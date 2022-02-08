@@ -86,8 +86,6 @@ nav.scrolled .links a:hover {
     margin: 0 auto;
 }
 
-
-
 .menu-img {
     height: 300px;
     width: 400px;
@@ -127,13 +125,13 @@ nav.scrolled .links a:hover {
 
 .left {
     transform: translateX(-200%);
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     opacity: 0;
 }
 
 .right {
     transform: translateX(200%);
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     opacity: 0;
 }
 
