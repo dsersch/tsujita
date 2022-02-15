@@ -84,9 +84,6 @@ nav.scrolled .links a:hover {
 .menu {
     background-color: #eee;
     padding: 100px;
-}
-
-.menu {
     text-align: center;
 }
 
@@ -298,7 +295,8 @@ footer a {
     }
 
     .menu {
-        text-align: center;
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .hero img {
